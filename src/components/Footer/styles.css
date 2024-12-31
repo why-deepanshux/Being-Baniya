@@ -1,0 +1,68 @@
+/* Footer Styles */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  color: #ffffff;
+  width: 100%;
+  margin-top: 2rem;
+  bottom: 0;
+  padding: 1.5rem;
+}
+
+.footer-icons{
+font-size: 1rem;
+  display: flex;
+  
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 1rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* Icon Styling */
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color:#ffffff;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.footer-icon:hover .icon {
+  
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .footer-icons {
+    gap: 10px;
+  }
+
+  .footer-text {
+    font-size: 0.8rem;
+  }
+}

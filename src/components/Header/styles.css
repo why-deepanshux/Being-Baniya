@@ -1,0 +1,36 @@
+.navbar{
+    /* background-color: var(--theme); */
+    padding: 1rem 1.5rem;
+    /* position:sticky; */
+    left:0;
+    top:0;
+    width:100%;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    color: var(--black);
+    font-weight: 600;
+    font-size: 2rem;
+    margin:0;
+}
+.link{
+    font-size: 1.2rem;
+    opacity:0.8;
+    cursor: pointer;
+}
+.link:hover{
+    opacity:1;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+    .logo{
+        font-size: 1.2rem;
+    }
+    .link{
+        font-size: 1rem;
+    }
+}
