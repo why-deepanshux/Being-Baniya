@@ -14,9 +14,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import TableTransactions from "../components/TableTransactions";
 import NoTransaction from "../components/NoTransaction";
 import { Card, Row } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth);
+  
   const [isLoading, setIsLoading] = useState(false);
   const [transactions, setTransactions] = useState([]);
   const [isExpenseModalVisible, setIsExpenseModalVisible] = useState(false);
