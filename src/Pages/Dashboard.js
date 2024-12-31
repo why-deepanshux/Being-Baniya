@@ -15,7 +15,7 @@ import TableTransactions from "../components/TableTransactions";
 import NoTransaction from "../components/NoTransaction";
 import { Card, Row } from "antd";
 import { useNavigate } from "react-router-dom";
-
+import Footer from '../components/Footer';
 const Dashboard = () => {
   const [user] = useAuthState(auth);
   
@@ -226,6 +226,7 @@ const Dashboard = () => {
             addTransaction={addTransaction}
             fetchAllTransactions={fetchAllTransactions}
           />
+          <Footer />
         </>
       )}
     </div>
