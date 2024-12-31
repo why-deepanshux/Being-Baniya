@@ -182,7 +182,7 @@ const SignUpSignInComponent = () => {
           <form>
             <Input
               label="Fullname"
-              placeholder="Gunjan Agrawal"
+              placeholder="Gunjan Agarwal"
               state={name}
               setState={setName}
               type="text"
